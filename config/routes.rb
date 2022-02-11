@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   #pega o artigo pelo parâmetro ID e mostra na view
   get "/articles/:id", to: "articles#index"
 
+  resources :articles
 
 end
