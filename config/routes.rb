@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root "articles#index"
 
-  get "articles", to: "articles#index"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  #pega os artigos e mostra na view
+  get "/articles", to: "articles#index"
+  #pega o artigo pelo parâmetro ID e mostra na view
+  get "/articles/:id", to: "articles#index"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+
 end
