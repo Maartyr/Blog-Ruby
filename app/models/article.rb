@@ -1,4 +1,5 @@
 class Article < ApplicationRecord
+  has_many :comments
 
   #valida o titulo
   validates :title, presence: true
